@@ -7,6 +7,7 @@ dotenv.config();
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
+  baseUrl: "https://codexaicodingassistant.onrender.com/",
 });
 
 const openai = new OpenAIApi(configuration);
